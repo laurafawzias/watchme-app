@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000/api/shows' });
+const API = axios.create({ baseURL: 'https://watchme-app-production.up.railway.app/api/shows' });
 
 export const getShows = async () => {
   const response = await API.get('/');
